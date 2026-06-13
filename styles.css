@@ -1,0 +1,696 @@
+.modal.lifeos-floating-modal {
+  width: min(1120px, 96vw);
+  height: min(760px, 90vh);
+  padding: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.modal.lifeos-floating-modal .modal-content {
+  height: 100%;
+  margin: 0;
+}
+
+.modal.lifeos-floating-modal.lifeos-expanded {
+  width: 96vw;
+  height: 92vh;
+}
+
+.lifeos-floating-modal .modal-close-button {
+  display: none;
+}
+
+.lifeos-shell {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  background: var(--background-primary);
+}
+
+.lifeos-content-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 248px;
+  gap: 0;
+  min-height: 0;
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
+}
+
+.lifeos-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding: 10px 12px;
+}
+
+.lifeos-panel-left,
+.lifeos-panel-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lifeos-panel-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.lifeos-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 0;
+  height: 100%;
+  padding: 18px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 28px;
+}
+
+.lifeos-evolution-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 0;
+  border-left: 1px solid var(--background-modifier-border);
+  background: var(--background-secondary);
+  padding: 14px 12px;
+  overflow: hidden;
+}
+
+.lifeos-evolution-sidebar h3 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.lifeos-sidebar-desc {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.lifeos-evolution-input {
+  width: 100%;
+  min-height: 120px;
+  max-height: 150px;
+  resize: vertical;
+}
+
+.lifeos-sidebar-divider {
+  height: 1px;
+  margin: 4px 0;
+  background: var(--background-modifier-border);
+}
+
+.lifeos-ai-section {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.lifeos-ai-input {
+  width: 100%;
+  min-height: 96px;
+  max-height: 130px;
+  resize: vertical;
+}
+
+.lifeos-ai-actions {
+  flex: 0 0 auto;
+}
+
+.lifeos-ai-answer {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  background: var(--background-primary);
+  padding: 10px;
+  color: var(--text-normal);
+  font-size: 12px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  padding-bottom: 18px;
+}
+
+.lifeos-subtitle {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.lifeos-nav-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 12px;
+}
+
+.lifeos-nav-button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 6px;
+  min-height: 86px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  background: var(--background-secondary);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 13px;
+  color: var(--text-normal);
+  text-align: left;
+  cursor: pointer;
+}
+
+.lifeos-nav-button:hover {
+  background: var(--background-modifier-hover);
+}
+
+.lifeos-nav-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.lifeos-nav-desc {
+  color: var(--text-muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.lifeos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.lifeos-card {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  background: var(--background-primary);
+  padding: 14px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.lifeos-card h3 {
+  margin: 0 0 10px;
+  font-size: 15px;
+}
+
+.lifeos-preview-card {
+  cursor: pointer;
+  transition: background-color 120ms ease, border-color 120ms ease, transform 120ms ease;
+}
+
+.lifeos-preview-card:hover {
+  border-color: var(--interactive-accent);
+  background: var(--background-secondary);
+  transform: translateY(-1px);
+}
+
+.lifeos-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lifeos-empty {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.lifeos-task {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.lifeos-task span {
+  line-height: 1.4;
+}
+
+.lifeos-task-completed span {
+  color: var(--text-muted);
+  text-decoration: line-through;
+}
+
+.lifeos-field-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.lifeos-field-wrap label {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.lifeos-field,
+.lifeos-textarea {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.lifeos-textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.lifeos-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.lifeos-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.lifeos-progress-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.lifeos-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+}
+
+.lifeos-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  background: var(--background-secondary);
+  padding: 12px;
+}
+
+.lifeos-stat-label {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.lifeos-stat-value {
+  color: var(--text-normal);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.lifeos-info-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  background: var(--background-secondary);
+  padding: 12px;
+}
+
+.lifeos-info-text,
+.lifeos-info-path {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.lifeos-info-path {
+  color: var(--text-muted);
+  font-family: var(--font-monospace);
+  font-size: 12px;
+  word-break: break-all;
+}
+
+.lifeos-flashcard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+.lifeos-flashcard {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  background: var(--background-secondary);
+  padding: 12px;
+}
+
+.lifeos-flashcard p,
+.lifeos-flashcard small {
+  margin: 0;
+}
+
+.lifeos-flashcard small {
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.lifeos-flashcard-grid-flip {
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+.lifeos-flashcard-flip {
+  cursor: pointer;
+  min-height: 132px;
+}
+
+.lifeos-flashcard-flip-inner {
+  position: relative;
+  min-height: 132px;
+  transition: transform 0.45s ease;
+  transform-style: preserve-3d;
+}
+
+.lifeos-flashcard-flip.lifeos-flipped .lifeos-flashcard-flip-inner {
+  transform: rotateY(180deg);
+}
+
+.lifeos-flashcard-face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  background: var(--background-secondary);
+  backface-visibility: hidden;
+  text-align: center;
+}
+
+.lifeos-flashcard-face p,
+.lifeos-flashcard-face small {
+  margin: 0;
+}
+
+.lifeos-flashcard-face small {
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.lifeos-flashcard-hint {
+  color: var(--text-faint);
+  font-size: 11px;
+}
+
+.lifeos-flashcard-back {
+  transform: rotateY(180deg);
+}
+
+.lifeos-preview-settings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+.lifeos-preview-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  background: var(--background-secondary);
+  padding: 10px;
+}
+
+.lifeos-preview-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.lifeos-preview-list {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  background: var(--background-primary);
+  padding: 12px;
+}
+
+@media (max-width: 640px) {
+  .modal.lifeos-floating-modal,
+  .modal.lifeos-floating-modal.lifeos-expanded {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  .lifeos-content-layout {
+    grid-template-columns: 1fr;
+    overflow: auto;
+  }
+
+  .lifeos-body {
+    overflow: visible;
+  }
+
+  .lifeos-evolution-sidebar {
+    border-left: 0;
+    border-top: 1px solid var(--background-modifier-border);
+    overflow: visible;
+  }
+
+  .lifeos-ai-answer {
+    max-height: 240px;
+  }
+}
+
+.lifeos-review-text {
+  white-space: pre-wrap;
+  line-height: 1.5;
+  color: var(--text-normal);
+}
+
+/* LifeOS unified cross-platform mobile styles. Added by external AI on 2026-06-10. */
+body.is-mobile .modal.lifeos-floating-modal,
+body.is-mobile .modal.lifeos-floating-modal.lifeos-expanded {
+  width: 100vw;
+  max-width: 100vw;
+  height: 100dvh;
+  max-height: 100dvh;
+  border-radius: 0;
+  margin: 0;
+}
+
+body.is-mobile .lifeos-shell {
+  height: 100dvh;
+}
+
+body.is-mobile .lifeos-content-layout {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+body.is-mobile .lifeos-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  padding: 12px;
+  gap: 12px;
+  overflow-y: auto;
+}
+
+body.is-mobile .lifeos-evolution-sidebar {
+  flex: 0 0 auto;
+  max-height: none;
+  border-left: 0;
+  border-top: 1px solid var(--background-modifier-border);
+  overflow: visible;
+}
+
+body.is-mobile .lifeos-panel-header {
+  padding: 8px 10px;
+  gap: 8px;
+}
+
+body.is-mobile .lifeos-panel-title {
+  font-size: 16px;
+}
+
+body.is-mobile .lifeos-nav-grid,
+body.is-mobile .lifeos-home-grid,
+body.is-mobile .lifeos-card-grid,
+body.is-mobile .lifeos-preview-detail-grid,
+body.is-mobile .lifeos-preview-settings,
+body.is-mobile .lifeos-flashcard-grid,
+body.is-mobile .lifeos-flashcard-grid-flip {
+  grid-template-columns: 1fr;
+}
+
+body.is-mobile .lifeos-nav-button,
+body.is-mobile .lifeos-button,
+body.is-mobile button {
+  min-height: 42px;
+}
+
+body.is-mobile .lifeos-input,
+body.is-mobile .lifeos-textarea,
+body.is-mobile select {
+  font-size: 16px;
+  min-height: 42px;
+}
+
+body.is-mobile .lifeos-textarea {
+  min-height: 120px;
+}
+
+body.is-mobile .lifeos-ai-answer {
+  max-height: 26dvh;
+  overflow-y: auto;
+}
+
+body.is-mobile .lifeos-card {
+  min-width: 0;
+}
+
+
+body.is-mobile .modal.lifeos-floating-modal .lifeos-mobile-utility {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px 10px calc(8px + env(safe-area-inset-bottom));
+  border-top: 1px solid var(--background-modifier-border);
+  background: var(--background-primary);
+}
+
+body.is-mobile .modal.lifeos-floating-modal .lifeos-mobile-utility-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+body.is-mobile .modal.lifeos-floating-modal .lifeos-mobile-utility-actions button {
+  width: 100%;
+  min-height: 42px;
+}
+
+body.is-mobile .modal.lifeos-floating-modal .lifeos-mobile-utility-drawer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 42dvh;
+  overflow-y: auto;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  padding: 10px;
+  background: var(--background-secondary);
+}
+
+body.is-mobile .modal.lifeos-floating-modal .lifeos-mobile-utility-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+body.is-mobile .modal.lifeos-floating-modal .lifeos-mobile-utility-header h3 {
+  margin: 0;
+  font-size: 15px;
+}
+
+body.is-mobile .modal.lifeos-floating-modal .lifeos-mobile-utility .lifeos-evolution-input,
+body.is-mobile .modal.lifeos-floating-modal .lifeos-mobile-utility .lifeos-ai-input {
+  min-height: 88px;
+  max-height: 18dvh;
+}
+
+body.is-mobile .modal.lifeos-floating-modal .lifeos-mobile-utility .lifeos-ai-answer {
+  min-height: 72px;
+  max-height: 18dvh;
+  overflow-y: auto;
+}
+@media (max-width: 768px) {
+  .modal.lifeos-floating-modal .lifeos-mobile-utility {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px 10px calc(8px + env(safe-area-inset-bottom));
+    border-top: 1px solid var(--background-modifier-border);
+    background: var(--background-primary);
+  }
+
+  .modal.lifeos-floating-modal .lifeos-mobile-utility-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .modal.lifeos-floating-modal .lifeos-mobile-utility-actions button {
+    width: 100%;
+    min-height: 42px;
+  }
+
+  .modal.lifeos-floating-modal .lifeos-mobile-utility-drawer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 42dvh;
+    overflow-y: auto;
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 8px;
+    padding: 10px;
+    background: var(--background-secondary);
+  }
+
+  .modal.lifeos-floating-modal .lifeos-mobile-utility-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .modal.lifeos-floating-modal .lifeos-mobile-utility-header h3 {
+    margin: 0;
+    font-size: 15px;
+  }
+
+  .modal.lifeos-floating-modal .lifeos-mobile-utility .lifeos-evolution-input,
+  .modal.lifeos-floating-modal .lifeos-mobile-utility .lifeos-ai-input {
+    min-height: 88px;
+    max-height: 18dvh;
+  }
+
+  .modal.lifeos-floating-modal .lifeos-mobile-utility .lifeos-ai-answer {
+    min-height: 72px;
+    max-height: 18dvh;
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal.lifeos-floating-modal,
+  .modal.lifeos-floating-modal.lifeos-expanded {
+    width: 100vw;
+    height: 100dvh;
+  }
+
+  .lifeos-mobile-utility-drawer {
+    max-height: 42dvh;
+  }
+
+  .lifeos-body {
+    padding: 10px;
+  }
+}

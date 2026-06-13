@@ -1,0 +1,11 @@
+{
+  "id": "lifeos",
+  "name": "LifeOS",
+  "version": "0.1.1",
+  "minAppVersion": "1.5.0",
+  "description": "A visual life management dashboard for Obsidian using Markdown as a local database.",
+  "author": "TODO: Your name",
+  "authorUrl": "TODO: https://github.com/your-username",
+  "isDesktopOnly": false
+}
+
