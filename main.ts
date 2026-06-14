@@ -1784,7 +1784,7 @@ class LifeOSSettingTab extends PluginSettingTab {
   display() {
     const { containerEl } = this;
     containerEl.empty();
-    containerEl.createEl("h2", { text: "LifeOS Settings" });
+    new Setting(containerEl).setName("Life Manager Dashboard Settings").setHeading();
 
     new Setting(containerEl)
       .setName("Database folder")
@@ -1809,11 +1809,10 @@ class LifeOSSettingTab extends PluginSettingTab {
         })
       );
 
-    containerEl.createEl("h3", { text: "AI API" });
-    containerEl.createEl("p", {
-      text: "Compatible with OpenAI-style /v1/chat/completions APIs, such as DeepSeek.",
-      cls: "setting-item-description"
-    });
+    new Setting(containerEl)
+      .setName("AI API")
+      .setDesc("Compatible with OpenAI-style /v1/chat/completions APIs, such as DeepSeek.")
+      .setHeading();
 
     new Setting(containerEl)
       .setName("API URL")

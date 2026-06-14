@@ -1,7 +1,7 @@
 ﻿{
     "id":  "life-manager-dashboard",
     "name":  "Life Manager Dashboard",
-    "version":  "0.1.3",
+    "version":  "0.1.4",
     "minAppVersion":  "1.5.0",
     "description":  "A visual life management dashboard that uses Markdown as a local database.",
     "author":  "steven",
