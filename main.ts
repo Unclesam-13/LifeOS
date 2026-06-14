@@ -1784,7 +1784,7 @@ class LifeOSSettingTab extends PluginSettingTab {
   display() {
     const { containerEl } = this;
     containerEl.empty();
-    new Setting(containerEl).setName("Life Manager Dashboard Settings").setHeading();
+    new Setting(containerEl).setName("Life Manager Dashboard").setHeading();
 
     new Setting(containerEl)
       .setName("Database folder")
