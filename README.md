@@ -1,6 +1,6 @@
-# LifeOS
+# Life Manager Dashboard
 
-LifeOS is a visual life management dashboard for Obsidian.
+Life Manager Dashboard is a visual life management system for Obsidian.
 
 It uses Markdown files as a local database and provides a floating visual panel for daily records, tasks, goals, projects, learning, health, finance, relationships, reviews, career development, emotions, knowledge notes, and system evolution notes.
 
@@ -14,7 +14,7 @@ It uses Markdown files as a local database and provides a floating visual panel 
 
 ## Data Storage
 
-LifeOS writes Markdown files inside the configured database folder. The default folder is:
+Life Manager Dashboard writes Markdown files inside the configured database folder. The default folder is:
 
 ```text
 LifeOS/
@@ -60,9 +60,8 @@ Then restart Obsidian and enable LifeOS in Community plugins.
 
 ## Mobile
 
-LifeOS supports Obsidian Mobile. On mobile and narrow screens, the system evolution and AI areas collapse into bottom buttons to keep the main panel readable.
+Life Manager Dashboard supports Obsidian Mobile. On mobile and narrow screens, the system evolution and AI areas collapse into bottom buttons to keep the main panel readable.
 
 ## License
 
 MIT
-
